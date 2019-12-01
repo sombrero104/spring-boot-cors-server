@@ -13,12 +13,14 @@
 origin이 다른 곳에서 요청을 보낼 경우,<br/>
 기본적으로는 헤더 정보에 'Access-Control-Allow-Origin'이 없기 때문에 <br/>
 아래와 같이 에러 메시지가 뜨고 차단된다.<br/>
+<br/>
 
 <pre>
 Access to XMLHttpRequest at 'http://localhost:8080/hello'
 from origin 'http://localhost:18080' has been blocked by CORS policy:
     No 'Access-Control-Allow-Origin' header is present on the requested resource.
 </pre>
+<br/>
 
 ### 스프링 MVC @CrossOrigin
 https://docs.spring.io/spring/docs/5.0.7.RELEASE/spring-framework-reference/web.html#mvc-cors <br/>
