@@ -49,14 +49,12 @@ public String hello() {
 <pre>
 @Configuration
 public class WebConfig implements WebMvcConfigurer {
-
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         // registry.addMapping("/hello")
         registry.addMapping("/**")
                 .allowedOrigins("http://localhost:18080");
     }
-
 }
 </pre>
 <br/>
