@@ -42,3 +42,21 @@ public String hello() {
 }
 </pre>
 <br/>
+또는 @Configuration 애노테이션과 함께 WebMvcConfigurer를 구현한<br/>
+자바 설정 파일을 만들어서 글로벌하게 설정할 수도 있다.<br/>
+=> sombrero.WebConfig 파일 참조.<br/>
+<br/>
+<pre>
+@Configuration
+public class WebConfig implements WebMvcConfigurer {
+
+    @Override
+    public void addCorsMappings(CorsRegistry registry) {
+        // registry.addMapping("/hello")
+        registry.addMapping("/**")
+                .allowedOrigins("http://localhost:18080");
+    }
+
+}
+</pre>
+<br/>
