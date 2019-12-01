@@ -11,7 +11,8 @@
 
 <br/>
 origin이 다른 곳에서 요청을 보낼 경우,<br/>
-기본적으로 아래처럼 'Access-Control-Allow-Origin'이 헤더 정보에 없기 때문에 차단된다.<br/>
+기본적으로는 헤더 정보에 'Access-Control-Allow-Origin'이 없기 때문에 <br/>
+아래와 같이 에러 메시지가 뜨고 차단된다.<br/>
 
 <pre>
 Access to XMLHttpRequest at 'http://localhost:8080/hello'
